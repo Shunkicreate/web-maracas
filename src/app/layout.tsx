@@ -13,6 +13,9 @@ const zenkakugothicnew = Zen_Kaku_Gothic_New({
 export const metadata: Metadata = {
   title: "Webマラカス",
   description: "スマホでマラカスを振って楽しもう",
+  verification: {
+    google: 'gfUcvJDVTZ_TsqowF39TrpzIQSf5_GIZoZ2i-QbCbIc',
+  }
 };
 
 export default function RootLayout({
