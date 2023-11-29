@@ -10,7 +10,7 @@ export interface AudioFile {
 const useSoundEvents = (
   shakeThreshold: number = 20,
   shakeInterval: number = 200,
-  soundRef: RefObject<HTMLDivElement>
+  soundRef: RefObject<HTMLDivElement>,
 ) => {
   const audioFiles: AudioFile[] = [
     { name: "マラカス", path: "/sounds/maracas-sound.mp3" },
@@ -71,7 +71,7 @@ const useSoundEvents = (
         playSoundIfPossible();
       }
     },
-    [updateAndDetectAcceleration, playSoundIfPossible]
+    [updateAndDetectAcceleration, playSoundIfPossible],
   );
 
   useEffect(() => {

@@ -16,7 +16,7 @@ export const useThreeAnimation = (
       }
     | undefined,
   lightUpdateCounter: number,
-  feverMode: boolean
+  feverMode: boolean,
 ) => {
   const isDraggingRef = useRef(false);
   useEffect(() => {

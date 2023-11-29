@@ -19,7 +19,7 @@ const SensorButton: React.FC<SensorButtonProps> = memo(
     // モードに応じて画像を切り替える
     const colorModeMemo = useMemo(
       () => (colorMode === "dark" ? "dark" : "light"),
-      [colorMode]
+      [colorMode],
     );
     return (
       <button
@@ -54,7 +54,7 @@ const SensorButton: React.FC<SensorButtonProps> = memo(
       prevProps.colorMode === nextProps.colorMode &&
       prevProps.sensorOn === nextProps.sensorOn
     );
-  }
+  },
 );
 
 SensorButton.displayName = "SensorButton";

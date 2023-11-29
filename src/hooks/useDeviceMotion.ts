@@ -36,7 +36,7 @@ const useDeviceMotion = (threshold: number = 20) => {
       const magnitude = Math.sqrt(x ** 2 + y ** 2 + z ** 2);
       return magnitude >= threshold;
     },
-    [threshold]
+    [threshold],
   );
 
   const updateAndDetectAcceleration = useCallback(
@@ -47,7 +47,7 @@ const useDeviceMotion = (threshold: number = 20) => {
       setAcceleration({ x: ax, y: ay, z: az });
       return detectAcceleration(ax, ay, az);
     },
-    [detectAcceleration]
+    [detectAcceleration],
   );
 
   return {

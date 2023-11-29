@@ -29,12 +29,12 @@ const VolumeButton: React.FC<VolumeButtonProps> = memo(
     // Volumeをモードに変換し、メモ化
     const volumeMode = useMemo(
       () => getVolumeMode(Volume, isMuted),
-      [Volume, isMuted]
+      [Volume, isMuted],
     );
     // モードに応じて画像を切り替える
     const colorModeMemo = useMemo(
       () => (colorMode === "dark" ? "dark" : "light"),
-      [colorMode]
+      [colorMode],
     );
     return (
       <button
@@ -74,7 +74,7 @@ const VolumeButton: React.FC<VolumeButtonProps> = memo(
       prevProps.handleToggleMute === nextProps.handleToggleMute &&
       prevProps.colorMode === nextProps.colorMode
     );
-  }
+  },
 );
 
 VolumeButton.displayName = "VolumeButton";

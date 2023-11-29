@@ -5,7 +5,7 @@ import * as THREE from "three";
 const createDirectionalLight = (
   color: number,
   intensity: number,
-  position: { x: number; y: number; z: number }
+  position: { x: number; y: number; z: number },
 ) => {
   const light = new THREE.DirectionalLight(color, intensity);
   light.position.set(position.x, position.y, position.z);
@@ -16,13 +16,13 @@ const createPointLight = (
   color: number,
   intensity: number,
   position: { x: number; y: number; z: number },
-  index: number
+  index: number,
 ) => {
   const light = new THREE.PointLight(color, 0, 50);
   light.position.set(
     5 * Math.sin(index),
     5 * Math.cos(index),
-    5 * Math.sin(index) * Math.cos(index)
+    5 * Math.sin(index) * Math.cos(index),
   );
   return light;
 };
@@ -53,8 +53,8 @@ export const useThreeLighting = (scene: THREE.Scene | null) => {
   const ambientLightRef = useRef(new THREE.AmbientLight(0x404040, 90));
   const pointLightsRef = useRef<THREE.PointLight[]>(
     shuffleArray(colors).map((color, idx) =>
-      createPointLight(color, 0, setLightPosition(idx * 36, 5, 0), idx)
-    )
+      createPointLight(color, 0, setLightPosition(idx * 36, 5, 0), idx),
+    ),
   );
   const directionalLightsRef = useRef([
     createDirectionalLight(0xffffff, 3, { x: 0, y: 5, z: 50 }),

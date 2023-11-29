@@ -14,7 +14,7 @@ export const useThreeModel = (
   scene: THREE.Scene | null,
   camera: THREE.Camera | null,
   renderer: THREE.WebGLRenderer | null,
-  mode: "normal" | "special"
+  mode: "normal" | "special",
 ) => {
   const modelRef = useRef<THREE.Object3D | null>(null);
   const loadingStateRef = useRef<ModelLoadingState>(ModelLoadingState.Idle);
@@ -41,12 +41,14 @@ export const useThreeModel = (
         (error) => {
           loadingStateRef.current = ModelLoadingState.Error;
           console.error(error);
-        }
+        },
       );
     };
 
     const modelUrl =
-      mode === "normal" ? "/models/maracas-wood-v2.glb" : "/models/maracas-gold-v2.glb";
+      mode === "normal"
+        ? "/models/maracas-wood-v2.glb"
+        : "/models/maracas-gold-v2.glb";
     loadModel(modelUrl);
 
     return () => {

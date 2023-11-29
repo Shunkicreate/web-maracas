@@ -24,7 +24,7 @@ export const useThreeScene = () => {
       if (rendererRef.current) {
         rendererRef.current.setSize(
           document.documentElement.clientWidth,
-          window.innerHeight
+          window.innerHeight,
         );
       }
     };

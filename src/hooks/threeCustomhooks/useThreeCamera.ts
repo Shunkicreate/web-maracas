@@ -11,7 +11,7 @@ export const useThreeCamera = () => {
         75,
         window.innerWidth / window.innerHeight,
         0.1,
-        1000
+        1000,
       );
       newCamera.position.set(0, 0, 5);
       cameraRef.current = newCamera;

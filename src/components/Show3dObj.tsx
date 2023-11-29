@@ -40,7 +40,7 @@ const Show3dObj = (props: Show3dObjProps) => {
     scene,
     camera,
     renderer,
-    memoizedMode
+    memoizedMode,
   );
   useThreeAnimation(
     scene,
@@ -48,7 +48,7 @@ const Show3dObj = (props: Show3dObjProps) => {
     renderer,
     lights,
     lightUpdateCounter,
-    momoizedFeverMode
+    momoizedFeverMode,
   );
 
   useEffect(() => {
