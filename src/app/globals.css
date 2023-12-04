@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+p {
+	margin: 1rem 0;
+	line-height: 1.5;
+}
+
+ul {
+	padding-left: 1.5rem;
+}
+
+li {
+	list-style-type: disc;
+	margin: 0.5rem 0;
+}
+
+ol {
+	list-style-type: decimal;
+}
