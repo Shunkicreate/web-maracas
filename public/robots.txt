@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://web-maracas.vercel.app/
+
+# Sitemaps
+Sitemap: https://web-maracas.vercel.app/sitemap.xml
