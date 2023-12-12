@@ -11,8 +11,8 @@ const zenkakugothicnew = Zen_Kaku_Gothic_New({
 });
 
 export const metadata: Metadata = {
-	title: "Webマラカス",
-	description: "スマホでマラカスを振って楽しもう",
+	title: "Webマラカス - スマホで楽しむバーチャルマラカスアプリ",
+	description: "Webマラカスは、スマートフォンを使ってどこでもマラカスを楽しむことができる革新的なアプリです。手軽に音楽のリズムを感じながら、軽量、ノーマル、スペシャルの各種マラカスを振ってみましょう。スマホを振るだけで本物のマラカスのような音が楽しめ、友達や家族とのパーティー、音楽のリズムトレーニング、リラクゼーションの時間など、さまざまなシーンで活躍します。Webマラカスで、いつでもどこでも音楽の喜びを手の中に。",
 	verification: {
 		google: "gfUcvJDVTZ_TsqowF39TrpzIQSf5_GIZoZ2i-QbCbIc",
 	},
