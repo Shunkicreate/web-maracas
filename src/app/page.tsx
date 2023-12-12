@@ -2,6 +2,7 @@
 import Description from "@/components/Description";
 import NavigateButton from "@/components/NavigateButton";
 import SoundWarning from "@/components/SoundWarning";
+import Loading from "./loading";
 const Page = () => {
 	const navigationButtonProps = [
 		{
