@@ -2,7 +2,7 @@
 import Description from "@/components/Description";
 import NavigateButton from "@/components/NavigateButton";
 import SoundWarning from "@/components/SoundWarning";
-import Loading from "./loading";
+import SiteExplanationLazy from "@/components/SiteExplanationLazy";
 const Page = () => {
 	const navigationButtonProps = [
 		{
@@ -32,7 +32,7 @@ const Page = () => {
 					})}
 				</div>
 			</div>
-      <SoundWarning />
+			<SiteExplanationLazy />
 		</>
 	);
 };
