@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			>
 				<ChakraProvider>
 					<Header />
-					<main className='h-[100svh]'>
+					<main className='min-h-[calc(100svh-1.5rem)]'>
 						<div className='md:max-w-[60%] max-w-[90%] m-auto pt-20'>{children}</div>
 					</main>
 					<Footer />
@@ -60,4 +60,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		</html>
 	);
 }
-

@@ -5,7 +5,7 @@ const AsyncContent = lazy(() => import("./SiteExplanation"));
 
 const SiteExplanationLazy = () => {
 	return (
-		<Accordion defaultIndex={[0]} allowMultiple>
+		<Accordion allowMultiple>
 			<AccordionItem>
 				<h2>
 					<AccordionButton>
