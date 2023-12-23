@@ -82,7 +82,8 @@ const useAudioPlayer = (audioFilePath: string = "/sound/maracas-sound.mp3") => {
     if (
       !audioBufferRef.current ||
       !audioContextRef.current ||
-      !gainNode.current
+      !gainNode.current ||
+      isMuted
     )
       return;
     const source = audioContextRef.current.createBufferSource();
@@ -99,7 +100,7 @@ const useAudioPlayer = (audioFilePath: string = "/sound/maracas-sound.mp3") => {
         console.error("An unexpected error occurred:", error);
       }
     }
-  }, [audioBufferRef, audioContextRef]);
+  }, [audioBufferRef, audioContextRef, isMuted]);
 
   return {
     loadingState,

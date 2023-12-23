@@ -77,11 +77,10 @@ const useSoundEvents = (
   useEffect(() => {
     const div = soundRef.current;
     if (!div) return;
-    if (!isMuted) {
-      div.addEventListener("touchstart", handleTouch);
-    }
+    const eventType = 'ontouchstart' in window ? 'touchstart' : 'click';
+    div.addEventListener(eventType, handleTouch);
     return () => {
-      div.removeEventListener("touchstart", handleTouch);
+      div.removeEventListener(eventType, handleTouch);
     };
   }, [handleTouch, isMuted, soundRef]);
 
