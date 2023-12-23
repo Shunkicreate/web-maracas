@@ -22,8 +22,5 @@ Web Maracasは、Next.js, ChakraUI, TailwindCSS, Three.jsを使用して開発�
 3. モバイルデバイスのアイコンをクリックして、デバイスの加速度センサーへのアクセスを許可
 4. ミュートを解除
 
-## コントリビュート
+## Contributing
 貢献したい方は、プロジェクトへのPull Requestを歓迎します。
-
-## ライセンス
-このプロジェクトは[GNU General Public License (GPL)]のもとで公開されています。
